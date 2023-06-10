@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+ 
+int main() {
+	long long n;
+	long long sum=0;
+	cin>>n;
+	for(int i=1;i<n;i++){
+		long long a;
+		cin>>a;
+		sum=sum+a;
+	}
+	long long ans=(n)*(n+1)/2-sum;
+	cout<<ans;
+	return 0;
+}
